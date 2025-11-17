@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = '3booda24'
+        DOCKERHUB_USER = 'DOCKERHUB_USERNAME'
         APP_IMAGE = 'vprofileapp'
         DB_IMAGE = 'vprofiledb'
         TAG = 'latest'
