@@ -1,5 +1,6 @@
-FROM openjdk:11 AS build_image
-RUN apt update && apt install maven -y
+# FROM openjdk:11 AS build_image
+FROM maven:3.9.6-eclipse-temurin-17 AS build_image 
+RUN apt update && apt install git -y
 RUN git clone https://github.com/devopshydclub/vprofile-project.git
 RUN cd vprofile-project && git checkout docker &&  mvn install 
 
