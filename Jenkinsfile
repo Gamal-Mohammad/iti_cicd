@@ -12,7 +12,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'Master', url: 'https://github.com/Gamal-Mohammad/iti_cicd.git'
+                git branch: 'main', url: 'https://github.com/Gamal-Mohammad/iti_cicd.git'
             }
         }
 
